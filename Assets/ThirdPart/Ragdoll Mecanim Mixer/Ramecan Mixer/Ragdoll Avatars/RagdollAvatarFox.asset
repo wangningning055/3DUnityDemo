@@ -1,0 +1,890 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9bedf342f7517b48a204328f1d6dc1b, type: 3}
+  m_Name: RagdollAvatarFox
+  m_EditorClassIdentifier: 
+  mass: 70
+  layer: 26
+  physicMaterial: {fileID: 0}
+  spring: 1000
+  damper: 10
+  previewBones:
+  - name: Fox_Pelvis
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: -1
+    childIDs: 01000000050000000900000018000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.50000006, y: -0.5000001, z: -0.49999994, w: 0.49999994}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.1, y: 0.1, z: 0.1}
+    capsuleBounds:
+      height: 0.2
+      radius: 0.1
+      direction: 0
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.0000000056
+  - name: Fox_LLeg1
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 0
+    childIDs: 02000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.6334573, y: -0.010847484, z: -0.013247123, w: 0.77358824}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.17944641}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.17944641}
+    capsuleBounds:
+      height: 0.35889283
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.005108714
+  - name: Fox_LLeg2
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 1
+    childIDs: 03000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.98963654, y: 0.028284656, z: 0.004022026, w: 0.1407245}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.12916}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.12916}
+    capsuleBounds:
+      height: 0.25832
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037015
+  - name: Fox_LLegAnkle
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 2
+    childIDs: 04000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.53719056, y: 0.00029088798, z: 0.00045673296, w: 0.8434608}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.16274345}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.16274345}
+    capsuleBounds:
+      height: 0.3254869
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037015
+  - name: Fox_LLegDigit11
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 3
+    childIDs: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.7071059, y: -0.000000059604794, z: -0.00000005960495, w: 0.7071078}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.05}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.05}
+    capsuleBounds:
+      height: 0.1
+      radius: 0.05
+      direction: 0
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_RLeg1
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 0
+    childIDs: 06000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.6334578, y: 0.010930055, z: 0.013347892, w: 0.77358496}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.17944632}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.17944632}
+    capsuleBounds:
+      height: 0.35889265
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_RLeg2
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 5
+    childIDs: 07000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.98961914, y: -0.029007467, z: -0.004124071, w: 0.14069685}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.12916012}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.12916012}
+    capsuleBounds:
+      height: 0.25832024
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_RLegAnkle
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 6
+    childIDs: 08000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.53724104, y: -0.00009862615, z: -0.00015483577, w: 0.84342873}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.16274384}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.16274384}
+    capsuleBounds:
+      height: 0.32548767
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_RLegDigit11
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 7
+    childIDs: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.7071068, y: 0.00000038743028, z: 0.0000003874302, w: 0.7071067}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.05}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.05}
+    capsuleBounds:
+      height: 0.1
+      radius: 0.05
+      direction: 0
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_Spine1
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 0
+    childIDs: 0a000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.027144616, y: 0.000001213047, z: 0.00004467184, w: 0.9996315}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.16753021}
+      m_Extent: {x: 0.155, y: 0.155, z: 0.16753021}
+    capsuleBounds:
+      height: 0.33506042
+      radius: 0.155
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037015
+  - name: Fox_Spine2
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 9
+    childIDs: 0b000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.0000011895471, y: 0.032824032, z: 0.9994612, w: 0.000036220597}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.16753022}
+      m_Extent: {x: 0.23, y: 0.16753022, z: 0.16753022}
+    capsuleBounds:
+      height: 0.46
+      radius: 0.16753022
+      direction: 0
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_Ribcage
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 10
+    childIDs: 0c0000001000000014000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.47523722, y: -0.47523743, z: -0.52359307, w: 0.52359277}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.12613069}
+      m_Extent: {x: 0.1, y: 0.1, z: 0.12613069}
+    capsuleBounds:
+      height: 0.25226137
+      radius: 0.1
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_F_LLeg1
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 11
+    childIDs: 0d000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.8204696, y: 0.0025053225, z: 0.0017456441, w: 0.5716821}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.17005143}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.17005143}
+    capsuleBounds:
+      height: 0.34010285
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_F_LLeg2
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 12
+    childIDs: 0e000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.622233, y: 0.026496641, z: 0.033286195, w: 0.7816752}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.1634933}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.1634933}
+    capsuleBounds:
+      height: 0.3269866
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_F_LLegAnkle
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 13
+    childIDs: 0f000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.470529, y: -0.000012268634, z: -0.000023007413, w: 0.88238454}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.051617537}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.051617537}
+    capsuleBounds:
+      height: 0.10323507
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_F_LLegDigit11
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 14
+    childIDs: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.7071068, y: -0.00000007450581, z: -0.00000007450582, w: 0.7071068}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.05}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.05}
+    capsuleBounds:
+      height: 0.1
+      radius: 0.05
+      direction: 0
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_F_RLeg1
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 11
+    childIDs: 11000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.8204806, y: -0.0026166218, z: -0.0018231175, w: 0.57166547}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.17005141}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.17005141}
+    capsuleBounds:
+      height: 0.34010282
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_F_RLeg2
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 16
+    childIDs: 12000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.6222463, y: -0.026369942, z: -0.033126343, w: 0.7816757}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.16349365}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.16349365}
+    capsuleBounds:
+      height: 0.3269873
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_F_RLegAnkle
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 17
+    childIDs: 13000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.47052807, y: 0.000011982369, z: 0.000022470631, w: 0.882385}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.051617496}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.051617496}
+    capsuleBounds:
+      height: 0.10323499
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_F_RLegDigit11
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 18
+    childIDs: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.7071059, y: -0.000000029802276, z: -0.00000002980236, w: 0.7071078}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.05}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.05}
+    capsuleBounds:
+      height: 0.1
+      radius: 0.05
+      direction: 0
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_Spine
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 11
+    childIDs: 15000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: -0.00000005032985, y: 0.4813932, z: 0.8765048, w: -0.00000009163892}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.18453282}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.18453282}
+    capsuleBounds:
+      height: 0.36906564
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_Head
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 20
+    childIDs: 1600000017000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: -0.24991456, y: 0.7107892, z: 0.6202875, w: -0.21809399}
+    colliderType: 1
+    bounds:
+      m_Center: {x: -0.09, y: 0.18, z: 0.09}
+      m_Extent: {x: 0.27, y: 0.27, z: 0.27}
+    capsuleBounds:
+      height: 0.54
+      radius: 0.27
+      direction: 0
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_LEar1
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 21
+    childIDs: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: -0.106827855, y: 0.6571791, z: 0.7364589, w: -0.119715184}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.05}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.11}
+    capsuleBounds:
+      height: 0.22
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.03448276
+  - name: Fox_REar1
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 21
+    childIDs: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.106827974, y: 0.65718085, z: 0.7364574, w: 0.11971477}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.082313284}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.082313284}
+    capsuleBounds:
+      height: 0.16462657
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.03448276
+  - name: Fox_Tail1
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 0
+    childIDs: 19000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.99848884, y: -0.000000052276715, z: -0.0000000028772271, w: 0.054955237}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.1336717}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.1336717}
+    capsuleBounds:
+      height: 0.2673434
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_Tail2
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 24
+    childIDs: 1a000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.99889123, y: 0.00000010368242, z: 0.0000000048865276, w: 0.047077503}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.1043084}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.1043084}
+    capsuleBounds:
+      height: 0.2086168
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_Tail3
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 25
+    childIDs: 1b000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.999972, y: -0.00000004651233, z: -3.4836214e-10, w: 0.0074894633}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.110410914}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.110410914}
+    capsuleBounds:
+      height: 0.22082183
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_Tail4
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 26
+    childIDs: 1c000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: -0.0000002686975, y: 0.9999215, z: 0.012529092, w: -0.0000000033667995}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.10155254}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.10155254}
+    capsuleBounds:
+      height: 0.20310508
+      radius: 0.05
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
+  - name: Fox_Tail5
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 27
+    childIDs: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.000002197535, y: 0.9986734, z: 0.051492076, w: 0.000000113305944}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.05}
+      m_Extent: {x: 0.05, y: 0.05, z: 0.05}
+    capsuleBounds:
+      height: 0.1
+      radius: 0.05
+      direction: 0
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.037037037
