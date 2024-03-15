@@ -19,22 +19,23 @@ function playerAnimator:Init(playerObj, animator, player)
 	print("Animator初始化！！！")
 end
 
-function playerAnimator:SetLayerWeight(delta)
-	-- print(delta)
-	self.layerCtr = self.layerCtr + delta * startSpeed > 1 and 1 or self.layerCtr + delta *startSpeed
-	-- print("Down!!! ", self.layerCtr)
-end
-function playerAnimator:SetLayerWeight2(delta)
-	self.layerCtr  = self.layerCtr - delta * startSpeed < 0 and 0 or self.layerCtr - delta * startSpeed
-	-- print(delta)
-	-- print("Up!!! ", self.layerCtr)
+-- function playerAnimator:SetLayerWeight(delta)
+-- 	-- print(delta)
+-- 	self.layerCtr = self.layerCtr + delta * startSpeed > 1 and 1 or self.layerCtr + delta *startSpeed
+-- 	-- print("Down!!! ", self.layerCtr)
+-- end
+-- function playerAnimator:SetLayerWeight2(delta)
+-- 	self.layerCtr  = self.layerCtr - delta * startSpeed < 0 and 0 or self.layerCtr - delta * startSpeed
+-- 	-- print(delta)
+-- 	-- print("Up!!! ", self.layerCtr)
 	
-end
+-- end
 
 function playerAnimator:Update(delta)
-	local data = self.player.handler:GetTend() > 1 and 1 or self.player.handler:GetTend()
-	self.animator:SetLayerWeight(1, data)
+	-- local data = self.player.handler:GetTend() > 1 and 1 or self.player.handler:GetTend()
+	-- self.animator:SetLayerWeight(1, data)
 	if(self.debugTime > 0.1) then
+		-- print(self.player.handler:GetTend().x.."      "..self.player.handler:GetTend().y)
 		self.debugTime = 0
 	else
 		self.debugTime = self.debugTime + delta

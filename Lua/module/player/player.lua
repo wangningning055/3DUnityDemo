@@ -20,7 +20,9 @@ end
 function player:Init()
 	print("玩家初始化！！！！！！！！！！！！！！！！！！！")
 	
-	self.player = GameObject.Find("RPG").transform:Find("RPG-Character").gameObject
+	-- self.player = GameObject.Find("RPG_Player").transform:Find("RPG-Character").gameObject
+	self.player = GameObject.Find("RPG-C").transform:Find("RPG"):Find("RPG-Character").gameObject
+
 	self.handler = require("module.player.playerHandler")
 	self.cs_animator = self.player:GetComponent(typeof(Animator))
 	self.animator = animator:New();
@@ -40,8 +42,12 @@ function player:Attack(delta)
 	module.event.playerHurt:trigger("哇哇哇哇哇哇哇")
 end
 function player:UpdateTend(tend)
-	print(tend.y)
-	self.player.transform.forward = Vector3(tend.x, 0, tend.y) 
+	print("?????");
+	self.cs_animator:SetFloat("Blend", tend.x);
+	self.cs_animator:SetFloat("Blend2", tend.y);
+	self.cs_animator:SetLayerWeight(0, 0)
+	
+	self.cs_animator:SetLayerWeight(1, tend.sqrMagnitude)
 end
 function player:Update(delta)
 	self.animator:Update(delta)

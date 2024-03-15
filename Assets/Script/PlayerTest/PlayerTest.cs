@@ -10,13 +10,18 @@ public class PlayerTest:MonoBehaviour
 	{
 		print("footR");
 	}
+	void Hit()
+	{
+		
+	}
 	void Update()
 	{
 		Vector2 aaa = Vector2.down;
 
 		GameObject player = GameObject.Find("RPG").transform.Find("RPG-Character").gameObject;
-		player.transform.forward = aaa.normalized;
+		// player.transform.forward = aaa.normalized;
 		Animator animator = player.GetComponent<Animator>();
+		// animator.SetFloat("Blend", 1);
 		// animator.SetLayerWeight()
 		// if(Input.GetKeyDown(KeyCode.S))
 		// {
