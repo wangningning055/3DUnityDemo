@@ -4,6 +4,12 @@
 
 !Assets/Base/**
 
+
+!Packages/
+!ProjectSettings/
+!Tools/
+!Lua/
+
 !Packages/**
 !ProjectSettings/**
 !Tools/**
