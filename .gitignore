@@ -12,8 +12,10 @@ Assets/AllResource
 !ProjectSettings/
 !Tools/
 !Lua/
+!UserSettings/
 
 !Packages/**
 !ProjectSettings/**
 !Tools/**
 !Lua/**
+!UserSettings/**
